@@ -15,10 +15,12 @@ import Default from './pages/Default';
 import WalletDashboard from './pages/WalletDashboard';
 import Mining from './pages/Mining';
 import Service from './pages/Service';
-import Settings from './pages/Settings';
 import Deposit from "./pages/Deposit"; // Create this page
 import Referral from "./pages/Referral"; // Create this page
 import Sidebar from './components/Sidebar'; // Import Sidebar
+import Settings from './pages/Settings'
+import Withdraw from './pages/Withdraw';
+import PopUpWithdraw from './pages/PopUpWithdraw';
 
 // Layout for dashboard with Sidebar
 const DashboardLayout = ({ children }) => {
@@ -51,6 +53,13 @@ function App() {
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/deposit" element={<Deposit />} />
+            <Route path="/referral" element={<Referral />} />
+            <Route path="/withdraw" element={<Withdraw />} />
+            <Route path="/popupwithdraw" element={<PopUpWithdraw />} />
+
+
             
             {/* Dashboard with Sidebar */}
             <Route 
@@ -59,9 +68,6 @@ function App() {
                 <DashboardLayout>
                   <Routes>
                     <Route path="" element={<Dashboard />} />
-                    <Route path="/deposit" element={<Deposit />} />
-                    <Route path="/referral" element={<Referral />} />
-                    <Route path="settings" element={<Settings />} />
                     {/* Add other dashboard-related routes here */}
                   </Routes>
                 </DashboardLayout>

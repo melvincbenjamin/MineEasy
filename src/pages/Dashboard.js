@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import { useNavigate } from 'react-router-dom';
 import { FaWallet, FaClipboardList, FaGift, FaDownload } from "react-icons/fa";
-import Sidebar from "../components/Sidebar";
+//import Sidebar from "../components/Sidebar";
 import MainContent from '../components/MainContent';
 import btc from '../assets/images/token-branded_hbtc.png';
 
@@ -12,10 +12,6 @@ const Dashboard = () => {
   return (
     <div className="container-fluid">
       <div className="row">
-        {/* Sidebar */}
-        <div className="col-12 col-md-2">
-          <Sidebar />
-        </div>
           <div>
             <MainContent />
           </div>
