@@ -34,9 +34,13 @@ const Dashboard = () => {
                 <Card.Body className="d-flex flex-column align-items-center">
                   <FaWallet size={24} style={{ position: "absolute", top: "10px", left: "10px" }} />
                   <h2 className="pt-5">$1,820</h2>
-                  <button className="btn btn-light mt-2" style={{ position: "absolute", top: "10px", right: "10px" }}>
-                    Deposit
-                  </button>
+                  <button
+                  className="btn btn-primary mt-2"
+                  style={{ position: "absolute", top: "10px", right: "10px" }}
+                  onClick={() => navigate('/depositusdwallet')}
+                >
+                  Deposit
+                </button>
                 </Card.Body>
               </Card>
             </div>

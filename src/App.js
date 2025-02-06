@@ -15,12 +15,13 @@ import Default from './pages/Default';
 import WalletDashboard from './pages/WalletDashboard';
 import Mining from './pages/Mining';
 import Service from './pages/Service';
-import Deposit from "./pages/Deposit"; // Create this page
-import Referral from "./pages/Referral"; // Create this page
+import Deposit from "./pages/Deposit"; 
+import Referral from "./pages/Referral";
 import Sidebar from './components/Sidebar'; // Import Sidebar
 import Settings from './pages/Settings'
 import Withdraw from './pages/Withdraw';
-import PopUpWithdraw from './pages/PopUpWithdraw';
+//import PopUpWithdraw from './pages/PopUpWithdraw';
+import DepositUSDWallet from './pages/DepositUsdWallet';
 
 // Layout for dashboard with Sidebar
 const DashboardLayout = ({ children }) => {
@@ -57,7 +58,7 @@ function App() {
             <Route path="/deposit" element={<Deposit />} />
             <Route path="/referral" element={<Referral />} />
             <Route path="/withdraw" element={<Withdraw />} />
-            <Route path="/popupwithdraw" element={<PopUpWithdraw />} />
+            <Route path="/depositusdwallet" element={<DepositUSDWallet />} />
 
 
             
