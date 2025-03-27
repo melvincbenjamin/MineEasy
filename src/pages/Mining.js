@@ -16,34 +16,10 @@ import registerIcon from '../assets/images/registerIcon.png';
 import planIcon from '../assets/images/planIcon.png';
 import receiveIcon from '../assets/images/receiveIcon.png';
 import MiningFarmCalculator from '../components/MiningFarmCalculator';
+import MiningContracts from "../components/MiningContract";
 
 const MiningPage = () => {
-  const contracts = [
-    {
-      title: "Cloud Mining - Newbie",
-      price: "$500 / 30 Days",
-      dailyIncome: "0.0005 BTC",
-      totalEarnings: "0.015 BTC",
-      hashrate: "50 TH/s",
-      agreement: "Purchase Agreement 1.3 BTC"
-    },
-    {
-      title: "Mining Farm - Bronze",
-      price: "$1,500 / 30 Days",
-      dailyIncome: "0.0015 BTC",
-      totalEarnings: "0.045 BTC",
-      hashrate: "150 TH/s",
-      agreement: "Purchase Agreement 3.5 BTC"
-    },
-    {
-      title: "Mining Pool - Silver",
-      price: "$3,000 / 30 Days",
-      dailyIncome: "0.003 BTC",
-      totalEarnings: "0.09 BTC",
-      hashrate: "300 TH/s",
-      agreement: "Purchase Agreement 7 BTC"
-    }
-  ];
+  
   return (
     <div>
       <header className="container-fluid text-center py-5" style={{ backgroundColor: "#F8F8F8"}}>
@@ -161,44 +137,9 @@ const MiningPage = () => {
       </section>
 
       {/* Popular Mining Contracts */}
-      <div className="container text-center py-5">
-      <h2 className="mb-4">The Most Popular Mining Contracts</h2>
-      <div className="row justify-content-center">
-        {contracts.map((plan, index) => (
-          <div className="col-md-4 mb-4" key={index}>
-            <div className="card p-3 shadow-sm" style={{ backgroundColor: "#0E2E45", color: "white" }}>
-              <h5>{plan.title}</h5>
-              <p>{plan.price}</p>
-              <p>Daily Income: {plan.dailyIncome}</p>
-              <p>Total Earnings: {plan.totalEarnings}</p>
-              <p>Hashrate: {plan.hashrate}</p>
-              <p>{plan.agreement}</p>
-              <button className="btn btn-success">Start</button>
-            </div>
-          </div>
-        ))}
+      <div>
+        <MiningContracts />
       </div>
-    </div>
-
-    {/* Popular Mining Contracts */}
-      <div className="container text-center py-5">
-      <h2 className="mb-4"> Contracts with maximum benefit in TH/s</h2>
-      <div className="row justify-content-center">
-        {contracts.map((plan, index) => (
-          <div className="col-md-4 mb-4" key={index}>
-            <div className="card p-3 shadow-sm" style={{ backgroundColor: "#0E2E45", color: "white" }}>
-              <h5>{plan.title}</h5>
-              <p>{plan.price}</p>
-              <p>Daily Income: {plan.dailyIncome}</p>
-              <p>Total Earnings: {plan.totalEarnings}</p>
-              <p>Hashrate: {plan.hashrate}</p>
-              <p>{plan.agreement}</p>
-              <button className="btn btn-success">Start</button>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
 
 {/* Bitcoin Section */}
       <section className="container text-center my-5">

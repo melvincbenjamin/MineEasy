@@ -18,10 +18,17 @@ import Service from './pages/Service';
 import Deposit from "./pages/Deposit"; 
 import Referral from "./pages/Referral";
 import Sidebar from './components/Sidebar'; // Import Sidebar
-import Settings from './pages/Settings'
+import Settings from './pages/Settings';
+import CustomerSupport from './pages/CustomerSupport';
 import Withdraw from './pages/Withdraw';
+import MiningDevice from './pages/MiningDevice';
 //import PopUpWithdraw from './pages/PopUpWithdraw';
 import DepositUSDWallet from './pages/DepositUsdWallet';
+import LoginIssues from './pages/LoginIssues';
+import TradingSetup from './pages/TradingSetup';
+import BillingPayments from './pages/BillingPayments';
+import TechnicalProblem from './pages/TechnicalProblem';
+import SecurityPrivacy from './pages/SecurityPrivacy';
 
 // Layout for dashboard with Sidebar
 const DashboardLayout = ({ children }) => {
@@ -53,11 +60,20 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/miningdevice" element={<MiningDevice />} />
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="/deposit" element={<Deposit />} />
             <Route path="/referral" element={<Referral />} />
             <Route path="/withdraw" element={<Withdraw />} />
+            <Route path="/support" element={<CustomerSupport />} />
+            <Route path="/login-issues" element={<LoginIssues />} />
+            <Route path="/mining-setup" element={<TradingSetup />} />
+            <Route path="/billing-payments" element={<BillingPayments />} />
+            <Route path="/technical-problem" element={<TechnicalProblem />} />
+            <Route path="/security-privacy" element={<SecurityPrivacy />} />
+
+
             <Route path="/depositusdwallet" element={<DepositUSDWallet />} />
 
 

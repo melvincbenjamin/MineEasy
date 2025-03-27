@@ -38,31 +38,30 @@ const Withdraw = () => {
             <Sidebar />
         </div>
     <div className="container">
-      <div className="card p-4 text-center">
+      <div className=" p-4 text-center">
         <div className="card mx-auto" style={{ maxWidth: '400px' }}>
           <div className="card-header bg-light">
             <strong>USDT Wallet</strong>
           </div>
-          <div className="card-body">
-            <p>
+          <div className="card-body text-start">
+            <p className='fs-6'>
               <strong>Address:</strong>{' '}
               {walletAddress ? walletAddress : <span className="text-danger">Please Update Your Wallet Address</span>}
             </p>
-
+            <hr />
             <input 
               type="text" 
-              className="form-control mb-3" 
+              className="form-control mb-3 fs-6" 
               placeholder="Enter Wallet Address" 
               value={walletAddress} 
               onChange={(e) => setWalletAddress(e.target.value)} 
             />
+            <p className='fs-6'><strong>Balance:</strong> <span style={{ color: " #FF0202"}}>{balance.toFixed(8)} USDT</span></p> <hr />
+            <p className='fs-6'><strong>Min Withdrawal Limit:</strong> <span style={{ color: " #FF0202"}}>{minWithdrawLimit.toFixed(8)} USDT</span></p><hr />
+            <p className='fs-6'><strong>Max Withdrawal Limit:</strong> <span style={{ color: " #FF0202"}}>{maxWithdrawLimit.toFixed(8)} USDT</span></p><hr />
+            <p className='fs-6'><strong>Withdrawal Fee:</strong> <span style={{ color: " #FF0202"}}>{withdrawFee.toFixed(8)} USDT</span></p><hr />
 
-            <p><strong>Balance:</strong> {balance.toFixed(8)} USDT</p>
-            <p><strong>Min Withdrawal Limit:</strong> {minWithdrawLimit.toFixed(8)} USDT</p>
-            <p><strong>Max Withdrawal Limit:</strong> {maxWithdrawLimit.toFixed(8)} USDT</p>
-            <p><strong>Withdrawal Fee:</strong> {withdrawFee.toFixed(8)} USDT</p>
-
-            <p className="text-danger">
+            <p style={{ color: "#ED0006"}}>
               Your daily profit will be released to your account at UTC 00:23:59 for withdrawal.
             </p>
 
@@ -82,9 +81,16 @@ const Withdraw = () => {
             <div className="modal-content">
               <div className="modal-header">
                 <h5 className="modal-title">Withdraw</h5>
-                <button type="button" className="close" onClick={() => setShowPopup(false)}>&times;</button>
+                <button 
+  type="button" 
+  className="btn text-white ms-auto" 
+  style={{ background: '#FF0202' }} 
+  onClick={() => setShowPopup(false)}
+>
+  &times;
+</button>
               </div>
-              <div className="modal-body">
+              <div className="modal-body text-start">
                 <label className="form-label">Enter Amount:</label>
                 <input 
                   type="number" 

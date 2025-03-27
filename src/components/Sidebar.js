@@ -42,7 +42,7 @@ const Sidebar = () => {
               </Link>
             </li>
             <li className="nav-item mb-3">
-              <Link to="/mining" className="nav-link text-dark d-flex align-items-center">
+              <Link to="/miningdevice" className="nav-link text-dark d-flex align-items-center">
                 <FaTools className="me-2" />
                 Mining Device
               </Link>
