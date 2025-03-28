@@ -70,10 +70,8 @@ function App() {
             <Route path="/login-issues" element={<LoginIssues />} />
             <Route path="/mining-setup" element={<TradingSetup />} />
             <Route path="/billing-payments" element={<BillingPayments />} />
-            <Route path="/technical-problem" element={<TechnicalProblem />} />
+            <Route path="/technical-problems" element={<TechnicalProblem />} />
             <Route path="/security-privacy" element={<SecurityPrivacy />} />
-
-
             <Route path="/depositusdwallet" element={<DepositUSDWallet />} />
 
 

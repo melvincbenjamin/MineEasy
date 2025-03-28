@@ -32,37 +32,37 @@ const Sidebar = () => {
             <li className="nav-item mb-3">
               <Link to="/dashboard" className="nav-link text-dark d-flex align-items-center">
                 <FaTachometerAlt className="me-2" />
-                Dashboard
+                <span className="nav-text">Dashboard</span>
               </Link>
             </li>
             <li className="nav-item mb-3">
               <Link to="/wallet/dashboard" className="nav-link text-dark d-flex align-items-center">
                 <FaWallet className="me-2" />
-                Wallet
+                <span className="nav-text">Wallet</span>
               </Link>
             </li>
             <li className="nav-item mb-3">
               <Link to="/miningdevice" className="nav-link text-dark d-flex align-items-center">
                 <FaTools className="me-2" />
-                Mining Device
+                <span className="nav-text">Mining Device</span>
               </Link>
             </li>
             <li className="nav-item mb-3">
               <Link to="/withdraw" className="nav-link text-dark d-flex align-items-center">
                 <FaCoins className="me-2" />
-                Withdraw
+                <span className="nav-text">Withdraw</span>
               </Link>
             </li>
             <li className="nav-item mb-3">
               <Link to="/settings" className="nav-link text-dark d-flex align-items-center">
                 <FaCogs className="me-2" />
-                Settings
+                <span className="nav-text">Settings</span>
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/support" className="nav-link text-dark d-flex align-items-center">
                 <FaHeadset className="me-2" />
-                Customer Support
+                <span className="nav-text">Customer Support</span>
               </Link>
             </li>
           </ul>
@@ -109,6 +109,10 @@ const Sidebar = () => {
 
           .toggle-button {
             display: none;
+          }
+
+          .nav-text {
+            font-size: 1.2rem;
           }
         }
       `}</style>

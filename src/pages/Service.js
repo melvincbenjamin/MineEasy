@@ -101,7 +101,7 @@ const Service = () => {
         {features.map((feature, index) => (
           <Col key={index} md={4}>
             <Card
-              className="text-center shadow-sm"
+              className="mt-3 text-center shadow-sm"
               style={{
                 backgroundColor: "#F9F5EC",
                 border: "none",
@@ -130,29 +130,44 @@ const Service = () => {
         ))}
       </Row>
     </Container>
-    <div className="mt-5 col-md-6 text-center bg-gray text-md-start"
-  style={{
-    backgroundImage: `url(${contactus})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  }}
->
-  <div className="row">
-    <div className="col-4">
-      <h4 className="fw-bold" style={{ color: '#43E6FB' }}>$20.0M</h4>
-      <p className="fs-7 fs-md-4 fs-lg-3" style={{ color: '#575757' }}>The amount of finance in the system</p>
+    <div 
+      className="py-5" 
+      style={{
+        backgroundImage: `url(${contactus})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        marginTop: "50px",
+        width: "100vw",         // Ensures full viewport width
+        position: "relative",   // Positions it relative to viewport
+        left: "0",              // Aligns to the very left edge
+        marginLeft: "calc(-50vw + 50%)"  // Cancels out container's center alignment
+      }}
+    >
+      <div className="container">
+        <div className="row">
+          <div className="col-12 col-md-4 text-center text-md-start mb-4 mb-md-0">
+            <h4 className="fw-bold" style={{ color: '#43E6FB' }}>$20.0M</h4>
+            <p className="fs-7 fs-md-4 fs-lg-3" style={{ color: '#575757' }}>
+              The amount of finance in the system
+            </p>
+          </div>
+          <div className="col-12 col-md-4 text-center text-md-start mb-4 mb-md-0">
+            <h4 className="fw-bold" style={{ color: '#43E6FB' }}>20.0M</h4>
+            <p className="fs-7 fs-md-4 fs-lg-3" style={{ color: '#575757' }}>
+              Active Users
+            </p>
+          </div>
+          <div className="col-12 col-md-4 text-center text-md-start">
+            <h4 className="fw-bold" style={{ color: '#43E6FB' }}>25.1</h4>
+            <p className="fs-7 fs-md-4 fs-lg-3" style={{ color: '#575757' }}>
+              Supported Countries
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div className="col-4">
-      <h4 className="fw-bold" style={{ color: '#43E6FB' }}>20.0M</h4>
-      <p className="fs-7 fs-md-4 fs-lg-3" style={{ color: '#575757' }}>Active Users</p>
-    </div>
-    <div className="col-4">
-      <h4 className="fw-bold" style={{ color: '#43E6FB' }}>25.1</h4>
-      <p className="fs-7 fs-md-4 fs-lg-3" style={{ color: '#575757' }}>Supported Countries</p>
-    </div>
-  </div>
-</div>  
+  
 <div>
     <InvestorSay />
 </div>

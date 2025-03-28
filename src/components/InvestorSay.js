@@ -9,8 +9,11 @@ const InvestorSay = () => {
       style={{ 
         backgroundColor: "#F8F8F8", 
         width: "100%",   // Ensure full width
+        height: "100%",
         paddingLeft: "0", 
-        paddingRight: "0", 
+        paddingRight: "0",
+        paddingTop: "10px", 
+        paddingBottom: "40px"
       }}
     >
       <h2 style={{

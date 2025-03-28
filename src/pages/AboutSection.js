@@ -68,7 +68,7 @@ const AboutSection = () => {
       <h2 className="fw-bold text-dark">
         Discover Who We Are and How We Revolutionize Crypto Mining
       </h2>
-      <p className="mt-3 text-muted" style={{ color: '#3C3C3C' }}>
+      <p className="mt-3 text-muted text-start" style={{ color: '#3C3C3C' }}>
         At [Your Company Name], our mission is to empower individuals and businesses by providing seamless access to cryptocurrency mining and trading. We aim to make crypto easy, secure, and profitable for everyone, from beginners to experts. Through cutting-edge technology, transparent services, and a commitment to trust and security, we strive to revolutionize the way you earn and trade digital assets. Join us as we shape the future of decentralized finance!
       </p>
     </div>
@@ -102,13 +102,13 @@ const AboutSection = () => {
           The amount of finance in the system
         </p>
       </div>
-      <div className="col-12 col-md-4 text-center text-md-start mb-4 mb-md-0">
+      <div className="col-12 col-md-4 text-center text-md-center mb-4 mb-md-0">
         <h4 className="fw-bold" style={{ color: '#43E6FB' }}>20.0M</h4>
         <p className="fs-7 fs-md-4 fs-lg-3" style={{ color: '#575757' }}>
           Active Users
         </p>
       </div>
-      <div className="col-12 col-md-4 text-center text-md-start">
+      <div className="col-12 col-md-4 text-center text-md-end">
         <h4 className="fw-bold" style={{ color: '#43E6FB' }}>25.1</h4>
         <p className="fs-7 fs-md-4 fs-lg-3" style={{ color: '#575757' }}>
           Supported Countries

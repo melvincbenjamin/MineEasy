@@ -1,0 +1,109 @@
+/* Base Styles */
+.why-choose-container {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .why-choose-heading {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .why-choose-subtext {
+    margin-bottom: 30px;
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  /* Mobile-first layout: Default to one column */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for small screens */
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Feature Card */
+  .feature-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-icon {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .card-desc {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Bitcoin Logo: Center it */
+  .bitcoin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bitcoin-logo {
+    width: 120px; /* Smaller on mobile */
+  }
+  
+  /* Responsive: Change layout on medium screens (768px) */
+  @media (min-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* Two columns */
+      gap: 20px;
+    }
+  
+    .bitcoin-logo {
+      width: 140px;
+    }
+  }
+  
+  /* Responsive: Change layout on large screens (1024px+) */
+  @media (min-width: 1024px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr); /* 3x3 grid */
+      grid-template-rows: repeat(3, auto);
+      gap: 30px;
+    }
+  
+    /* Center the Bitcoin logo */
+    .bitcoin-container {
+      grid-column: 2; /* Second column */
+      grid-row: 2;    /* Second row */
+    }
+  
+    .bitcoin-logo {
+      width: 160px; /* Larger on desktop */
+    }
+  }
+  
+  /* Larger screens (1440px) */
+  @media (min-width: 1440px) {
+    .why-choose-container {
+      max-width: 1440px;
+      padding: 100px 375px;
+    }
+  
+    .grid-container {
+      gap: 40px;
+    }
+  }
+  
