@@ -1,16 +1,16 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import Sidebar from "../components/Sidebar";
 import { Link } from "react-router-dom";
+import MainContent from "../components/MainContent";
 
 const LoginIssues = () => {
   return (
     <div className="container my-5">
         <div>
-            <Sidebar />
+            <MainContent />
         </div>
-      <h1 className="fw-bold text-center" style={{ color: "#352E5B" }}>
+      <h1 className="fw-bold text-start" style={{ color: "#352E5B" }}>
         Account / Login Issues <br />
         <span className="fs-6 text-muted" style={{ fontSize: "5px"}}>Customer Support / Account and Login Issues</span>
       </h1>

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import Sidebar from '../components/Sidebar';
-
+import MainContent from '../components/MainContent';
 
 const Withdraw = () => {
   const [walletAddress, setWalletAddress] = useState('');
@@ -35,9 +34,9 @@ const Withdraw = () => {
   return (
     <div>
         <div>
-            <Sidebar />
+            <MainContent />
         </div>
-    <div className="container">
+    <div className="mt-5 container">
       <div className=" p-4 text-center">
         <div className="card mx-auto" style={{ maxWidth: '400px' }}>
           <div className="card-header bg-light">

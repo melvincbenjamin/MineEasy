@@ -6,6 +6,13 @@ import { Link } from 'react-router-dom';
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Function to close sidebar when a menu item is clicked (mobile view)
+  const handleLinkClick = () => {
+    if (window.innerWidth < 992) {
+      setIsOpen(false);
+    }
+  };
+
   return (
     <div className="d-flex">
       {/* Sidebar Toggle Button */}
@@ -17,11 +24,11 @@ const Sidebar = () => {
       </button>
 
       {/* Sidebar */}
-      <div className={`sidebar ${isOpen ? "open" : "closed"}`}>
-        <div className="d-flex flex-column p-3 vh-100 bg-light">
+      <div className={`sidebar ${isOpen ? "open" : "closed"} bg-light`}>
+        <div className="d-flex flex-column p-3 vh-100">
           {/* Logo */}
           <div className="d-flex align-items-center mb-4">
-            <Link to="/" className="navbar-brand d-flex align-items-center">
+            <Link to="/" className="navbar-brand d-flex align-items-center" onClick={handleLinkClick}>
               <img src={Logo} alt="Logo" height="40" />
               <h4 className="ms-2 mb-0">MineEase</h4>
             </Link>
@@ -30,37 +37,37 @@ const Sidebar = () => {
           {/* Navigation */}
           <ul className="nav flex-column">
             <li className="nav-item mb-3">
-              <Link to="/dashboard" className="nav-link text-dark d-flex align-items-center">
+              <Link to="/dashboard" className="nav-link text-dark d-flex align-items-center" onClick={handleLinkClick}>
                 <FaTachometerAlt className="me-2" />
                 <span className="nav-text">Dashboard</span>
               </Link>
             </li>
             <li className="nav-item mb-3">
-              <Link to="/wallet/dashboard" className="nav-link text-dark d-flex align-items-center">
+              <Link to="/wallet/dashboard" className="nav-link text-dark d-flex align-items-center" onClick={handleLinkClick}>
                 <FaWallet className="me-2" />
                 <span className="nav-text">Wallet</span>
               </Link>
             </li>
             <li className="nav-item mb-3">
-              <Link to="/miningdevice" className="nav-link text-dark d-flex align-items-center">
+              <Link to="/miningdevice" className="nav-link text-dark d-flex align-items-center" onClick={handleLinkClick}>
                 <FaTools className="me-2" />
                 <span className="nav-text">Mining Device</span>
               </Link>
             </li>
             <li className="nav-item mb-3">
-              <Link to="/withdraw" className="nav-link text-dark d-flex align-items-center">
+              <Link to="/withdraw" className="nav-link text-dark d-flex align-items-center" onClick={handleLinkClick}>
                 <FaCoins className="me-2" />
                 <span className="nav-text">Withdraw</span>
               </Link>
             </li>
             <li className="nav-item mb-3">
-              <Link to="/settings" className="nav-link text-dark d-flex align-items-center">
+              <Link to="/settings" className="nav-link text-dark d-flex align-items-center" onClick={handleLinkClick}>
                 <FaCogs className="me-2" />
                 <span className="nav-text">Settings</span>
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/support" className="nav-link text-dark d-flex align-items-center">
+              <Link to="/support" className="nav-link text-dark d-flex align-items-center" onClick={handleLinkClick}>
                 <FaHeadset className="me-2" />
                 <span className="nav-text">Customer Support</span>
               </Link>
@@ -76,7 +83,7 @@ const Sidebar = () => {
           top: 0;
           left: 0;
           width: 250px;
-          height: 100%;
+          height: 100vh; /* Full height */
           transition: transform 0.3s ease-in-out;
           z-index: 1000;
         }

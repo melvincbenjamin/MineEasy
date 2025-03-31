@@ -10,7 +10,7 @@ const BillingPayments = () => {
         <div>
             <Sidebar />
         </div>
-      <h1 className="fw-bold text-center" style={{ color: "#352E5B" }}>
+      <h1 className="fw-bold text-start" style={{ color: "#352E5B" }}>
         Billing / Payments <br />
         <span className="fs-6 text-muted" style={{ fontSize: "5px"}}>Customer support / Billing and Payments</span>
       </h1>

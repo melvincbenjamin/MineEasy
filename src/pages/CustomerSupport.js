@@ -2,8 +2,8 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "animate.css";
-import Sidebar from "../components/Sidebar";
 import { Link } from "react-router-dom"; // Corrected usage of Link
+import MainContent from "../components/MainContent";
 
 // Importing icon images
 import accountIcon from "../assets/images/LoginIcon.png";
@@ -23,7 +23,7 @@ const CustomerSupport = () => {
 
   return (
     <div className="container my-5 animate__animated animate__fadeIn">
-      <Sidebar />
+      <MainContent />
 
       {/* Search Box */}
       <div className="text-center my-3 animate__animated animate__fadeInDown">

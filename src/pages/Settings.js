@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import Sidebar from '../components/Sidebar';
+import MainContent from '../components/MainContent';
 
 const Settings = () => {
   const [profile, setProfile] = useState({
@@ -50,10 +50,10 @@ const Settings = () => {
   return (
     <div>
     <div>
-      <Sidebar />
+      <MainContent />
     </div>
-    <div className="container mt-5">
-      <div className="card p-4">
+    <div className="mt-5">
+      <div className="card p-2">
         <h5 className="text-start text-white p-2" style={{backgroundColor: '#352E5B'}}>Update Your Profile</h5>
         <form onSubmit={updateProfile} className="text-start">
           <div className="row mb-3">

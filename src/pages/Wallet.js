@@ -1,11 +1,12 @@
+import MainContent from "../components/MainContent";
+
 const Wallet = () => {
     return (
       <Container fluid>
         <Row>
-          <Col md={2} className="d-none d-md-block">
-            <Sidebar />
-          </Col>
           <Col md={10} sm={12} className="p-4">
+          {"MainContent"}
+          <MainContent />
             <Navbar bg="light" className="mb-4 shadow-sm">
               <Container>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">

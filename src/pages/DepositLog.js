@@ -1,7 +1,7 @@
 import React from 'react';
 import MainContent from '../components/MainContent';
 
-const Deposit = () => {
+const DepositLog = () => {
   return (
     <div className="">
       <div>
@@ -24,7 +24,7 @@ const Deposit = () => {
 </div>
 
       {/* No Wallet Found Message and Button */}
-      <div className="flex flex-col sm:flex-row justify-center text-center items-center h-32 mt-6">
+      <div className="flex flex-col sm:flex-row justify-center items-center text-center h-32 mt-6">
         <p className="text-gray-500 text-sm sm:text-base mb-2 sm:mb-0">No wallet found yet!</p>
         <button style={{ backgroundColor: '#352E5B', color: 'white' }} className="ml-0 sm:ml-4 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition-colors duration-300">
           Deposit
@@ -34,4 +34,4 @@ const Deposit = () => {
   );
 };
 
-export default Deposit;
+export default DepositLog;

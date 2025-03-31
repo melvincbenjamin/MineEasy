@@ -3,14 +3,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import TransactionLog from "../components/TransactionLog";
 import MiningContracts from '../components/MiningContract';
+import MainContent from '../components/MainContent';
 
 function MiningDevice() {
   return (
-    <div className="container py-4" style={{ backgroundColor: '#f8f9fa' }}>
+    <div className="container py-4" style={{ backgroundColor: '' }}>
+      <MainContent />
       {/* Dashboard Header */}
-      <div className="d-flex justify-content-between align-items-center mb-4 p-3 bg-white shadow-sm rounded">
+      <div className="mt-4 d-flex justify-content-between align-items-center mb-4 bg-white rounded">
         <div>
-          <h3 className="fw-bold text-start mb-1">Dashboard</h3>
           <p className="mb-0 text-start" style={{ fontSize: '14px', color: "#3C3C3C", fontFamily: "poppins" }}>
             <span style={{ color: "#BE0104"}}>Your selected mining contract is activated automatically once your payment is confirmed. </span>
             <br /> The best way to get rich is investing on Bitcoin miner , your main money is back soon and then you get profit everyday Active your miners today and Multiply your money. <br /> <span style={{ color: "#BE0104"}}> For example: if you activate CLOUD MINING - NEWBIE miner with 500 USD, after 30 days you can withdraw 1.0244BTC (~$5055). </span>

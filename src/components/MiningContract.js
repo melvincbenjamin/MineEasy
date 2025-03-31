@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 //import { useNavigate } from 'react-router-dom';
 import PurchaseViewAll from '../pages/PurchaseViewAll';
-import PurchaseModal from "../pages/PurchaseModal";
+import PurchaseModal from "../pages/PaymentPreviewModal";
 
 const MiningContracts = () => {
   const [showModal, setShowModal] = useState(false);

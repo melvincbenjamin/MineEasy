@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import Sidebar from "../components/Sidebar";
+import MainContent from "../components/MainContent";
 
 const Wallet = () => {
   const [balance, setBalance] = useState(0);
@@ -22,17 +22,15 @@ const Wallet = () => {
   };
 
   return (
-    <div className="d-flex flex-column flex-md-row">
-      {/* Sidebar - Stacks on top in mobile, side-by-side on larger screens */}
-      <Sidebar />
-
+    <div className="d-flex flex-column flex-md-row w-100">
+      <MainContent />
       {/* Wallet Content */}
-      <div className="container mt-3 mt-md-0 p-3" style={{ maxWidth: "600px" }}>
-        <div className="d-flex justify-content-between">
-          <h6>USDT Wallet</h6>
+      <div className="container-fluid mt-md-5 p-3 ms-md-0" style={{ maxWidth: "100%" }}>
+        <div className="d-flex justify-content-between align-items-center" style={{ paddingTop: "50px" }}>
+          <h5>USDT Wallet</h5>
           <h6>Balance: ${balance.toFixed(2)}</h6>
         </div>
-        <div className="d-flex flex-column align-items-center pt-3">
+        <div className="d-flex flex-column pt-3">
           <input
             type="number"
             className="form-control mb-3 w-100"
@@ -40,7 +38,7 @@ const Wallet = () => {
             value={inputValue}
             onChange={handleInputChange}
           />
-          <button className="btn btn-warning w-100 mb-3" onClick={updateBalance}>
+          <button className="btn btn-warning w-100" onClick={updateBalance}>
             Update Wallet
           </button>
         </div>
