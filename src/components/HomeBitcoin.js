@@ -98,30 +98,37 @@ const HomeBitcoin = () => {
         </div>
       </div>
 
-      <div className="row mt-5" style={{ backgroundColor: "#F8F8F8", marginTop: '20px'}}>
-        <div className="col-12 col-md-6 mb-4 mb-md-0">
-          <img
-            src={closeuphands}
-            alt="Bitcoin Illustration"
-            className="img-fluid"
-            style={{
-              borderRadius: "20px",
-            }}
-          />
-        </div>
-        <div className="col-12 col-md-6 d-flex flex-column justify-content-center text-start mb-5">
-          <h2>Bitcoin is an innovative & a new kind of money.</h2>
-          <p>
-            Embrace the future of finance with Bitcoin, where traditional
-            boundaries are redefined, and financial control is handed back to
-            you.
-          </p>
-          <div>
-            <button className="btn btn-warning mt-4">Read More</button>
-          </div>
+      <div className="container-fluid mt-5" style={{ backgroundColor: "#F8F8F8", padding: "20px 0" }}>
+  <div className="container">
+    <div className="row align-items-center">
+      <div className="col-12 col-md-6 mb-4 mb-md-0 d-flex justify-content-center">
+        <img
+          src={closeuphands}
+          alt="Bitcoin Illustration"
+          className="img-fluid"
+          style={{
+            borderRadius: "20px",
+            width: "100%",
+            maxWidth: "498px",
+            height: "auto",
+            marginTop: "30px"
+          }}
+        />
+      </div>
+      <div className="col-12 col-md-6 d-flex flex-column justify-content-center text-start px-3 px-md-0" style={{ marginBottom: "0px" }}>
+        <h2 style={{ fontWeight: 600, fontSize: "32px", color: "#373E45", textAlign: "center" }}>Bitcoin is an innovative & a new kind of money.</h2>
+        <p style={{ color: "#373e45", fontSize: "16px", textAlign: "center" }}>
+          Embrace the future of finance with Bitcoin, where traditional boundaries are redefined, and financial control is handed back to you. It's not just a new kind of money—it's the forefront of a financial revolution.
+        </p>
+        <p style={{ textAlign: "center" }}>Join the movement and be part of the new wave of digital finance.</p>
+        <div className="text-center">
+          <button className="btn btn-warning mt-3">Read More</button>
         </div>
       </div>
     </div>
+  </div>
+</div>
+</div>
   );
 };
 

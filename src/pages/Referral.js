@@ -12,16 +12,16 @@ const Referral = () => {
   <table className="table table-striped text-white table-md">
     <thead>
       <tr>
-        <th style={{ backgroundColor: '#352E5B', color: 'white', fontSize: '1rem' }}>User</th>
-        <th style={{ backgroundColor: '#352E5B', color: 'white', fontSize: '1rem' }} >Reacharge Amount</th>
-        <th style={{ backgroundColor: '#352E5B', color: 'white', fontSize: '1rem' }} >Amount</th>
-        <th style={{ backgroundColor: '#352E5B', color: 'white', fontSize: '1rem' }} >Time</th>
+        <th style={{ backgroundColor: '#352E5B', color: 'white', fontSize: '0.7rem' }}>User</th>
+        <th style={{ backgroundColor: '#352E5B', color: 'white', fontSize: '0.7rem' }} >Reacharge Amount</th>
+        <th style={{ backgroundColor: '#352E5B', color: 'white', fontSize: '0.7rem' }} >Amount</th>
+        <th style={{ backgroundColor: '#352E5B', color: 'white', fontSize: '0.7rem' }} >Time</th>
       </tr>
     </thead>
     </table>
 </div>
           <div className="flex justify-center text-center items-center h-32">
-            <p className="text-gray-500">No referral bonus received yet!</p>
+            <p style={{ color: "#352e5b"}}>No referral bonus received yet!</p>
             <button style={{ backgroundColor: '#352E5B', color: 'white' }} className="ml-0 sm:ml-4 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition-colors duration-300">
           Deposit
         </button>

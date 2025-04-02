@@ -5,7 +5,7 @@ import HomeBitcoin from "../components/HomeBitcoin";
 import WhychooseUs from "../components/WhychooseUs";
 import InvestorSay from "../components/InvestorSay";
 import NewsCard from "../components/NewsCard";
-//import Navbar from "../components/Navbar";
+import CTABanner from "../components/CTABanner";
 
 function Home() {
   const data = [
@@ -109,6 +109,7 @@ function Home() {
         <HomeBitcoin />
         <WhychooseUs />
         <InvestorSay />
+        <CTABanner />
         <NewsCard />
       </div>
     </div>

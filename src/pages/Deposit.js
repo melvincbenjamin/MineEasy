@@ -13,11 +13,11 @@ const Deposit = () => {
   <table className="table table-striped text-white table-md">
     <thead>
       <tr>
-        <th style={{ backgroundColor: '#352E5B', color: 'white', fontSize: '1rem' }}>Transaction ID</th>
-        <th style={{ backgroundColor: '#352E5B', color: 'white', fontSize: '1rem' }} >Gateway</th>
-        <th style={{ backgroundColor: '#352E5B', color: 'white', fontSize: '1rem' }} >Amount</th>
-        <th style={{ backgroundColor: '#352E5B', color: 'white', fontSize: '1rem' }} >Status</th>
-        <th style={{ backgroundColor: '#352E5B', color: 'white', fontSize: '1rem' }} >Time</th>
+        <th style={{ backgroundColor: '#352E5B', color: 'white', fontSize: '0.7rem' }}>Transaction ID</th>
+        <th style={{ backgroundColor: '#352E5B', color: 'white', fontSize: '0.7rem' }} >Gateway</th>
+        <th style={{ backgroundColor: '#352E5B', color: 'white', fontSize: '0.7rem' }} >Amount</th>
+        <th style={{ backgroundColor: '#352E5B', color: 'white', fontSize: '0.7rem' }} >Status</th>
+        <th style={{ backgroundColor: '#352E5B', color: 'white', fontSize: '0.7rem' }} >Time</th>
       </tr>
     </thead>
     </table>

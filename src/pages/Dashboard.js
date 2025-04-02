@@ -5,6 +5,7 @@ import { FaWallet, FaClipboardList, FaGift, FaDownload } from "react-icons/fa";
 import MainContent from "../components/MainContent";
 import btc from "../assets/images/token-branded_hbtc.png";
 import DepositUSDWallet from "./DepositUsdWallet";
+import MiningWalletTable from "../components/MiningWalletTable";
 
 
 const Dashboard = () => {
@@ -86,21 +87,8 @@ const Dashboard = () => {
           </div>
 
           {/* Mining Wallets Table */}
-          <h4 className="mt-4 text-start text-dark">Mining Wallets</h4>
-          <div className="table-responsive">
-            <table className="table table-striped">
-              <thead>
-                <tr className="bg-dark text-white">
-                  <th>Wallet Name</th>
-                  <th>Miner Status</th>
-                  <th>Block Hash</th>
-                  <th>Balance</th>
-                </tr>
-              </thead>
-              <tbody>
-                {/* Add dynamic data here */}
-              </tbody>
-            </table>
+          <div>
+            <MiningWalletTable />
           </div>
         </div>
 

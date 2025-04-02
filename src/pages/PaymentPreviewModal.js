@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Button, InputGroup, FormControl, Spinner } from "react-bootstrap";
 import { QRCodeCanvas } from "qrcode.react";
-import MainContent from "../components/MainContent";
 
 const PaymentPreviewModal = ({ show, handleClose }) => {
   const [selectedGateway, setSelectedGateway] = useState("");
@@ -45,7 +44,7 @@ const PaymentPreviewModal = ({ show, handleClose }) => {
       {/* Deposit Modal */}
       <Modal show={show && currentStep === "deposit"} onHide={handleClose} centered>
         <Modal.Header closeButton>
-          <Modal.Title>Deposit on Your USD Wallet</Modal.Title>
+          <Modal.Title>Confirm Deposit on Your USD Wallet</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <form onSubmit={handleSubmit}>
@@ -90,7 +89,6 @@ const PaymentPreviewModal = ({ show, handleClose }) => {
           <Modal.Title>Payment Preview</Modal.Title>
         </Modal.Header>
         <Modal.Body className="text-center">
-          <MainContent />
           <p>PLEASE SEND EXACTLY <strong>{amount} {selectedGateway}</strong> TO</p>
           <InputGroup className="mb-3">
             <FormControl value={paymentAddress} readOnly />
